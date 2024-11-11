@@ -1,0 +1,50 @@
+.note-input {
+  padding: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: fixed; /* Fixes the position */
+  bottom: 20px; /* Adjusts margin from bottom */
+  width: calc(100% - 400px);
+  flex-grow: 1;
+  border: 20px solid;
+  color:#001F8B;
+}
+
+.note-input input, .note-input textarea {
+  width: calc(100% - 400px);
+  height: 5rem;
+  padding: 10px;
+  margin: 5px 0;
+  flex-grow: 1;
+  border-style: none;
+  outline: none;
+}
+
+.note-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: rgb(208, 62, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.note-input button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.note-input button:not(:disabled) {
+  background-color: blue; /* This will be dynamically updated in the component */
+  cursor: pointer;
+}
+
+.note-input button img {
+  width: 20px;
+  height: 20px;
+
+}

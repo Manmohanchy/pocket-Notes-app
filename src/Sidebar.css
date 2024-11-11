@@ -1,0 +1,77 @@
+.sidebar {
+  width: 300px; /* Fixed width for the sidebar */
+  padding: 10px; 
+  background-color: #f7f7f7;
+  position: fixed; /* Fixes the sidebar */
+  height: 100vh; /* Full height of the viewport */
+  overflow-y: auto; /* Allows scrolling */
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+}
+.sidebar h2 {
+  position: sticky;
+  font-size: 35px;
+  margin-left: 15px
+  ;
+  top: 0;
+  background-color: #f7f7f7; 
+  padding: 10px 0; 
+  z-index: 1; 
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px; /* Adjust spacing to fit the fixed header */
+  flex-grow: 1; /* Allows the list to grow and be scrollable */
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 28px;
+  color:#000000;
+  
+ 
+}
+
+.sidebar li.active {
+  background-color: #f5eeee;
+ 
+  border-radius: 10px;
+  
+}
+
+.sidebar li .group-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.sidebar button {
+  position: sticky; /* Makes the button sticky */
+  bottom: 30px; /* Adjusts the margin from the bottom */
+  left: 200px; /* Adjusts the margin from the left */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #16008B;
+  color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 600;
+  border-style: none;
+  z-index: 2; /* Ensures it stays on top of other elements */
+}

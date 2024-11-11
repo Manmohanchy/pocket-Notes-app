@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './NoteInput.css';
+import ButtonImage from './assets/Vector__3_-removebg-preview.png';
 
 const NoteInput = ({ addNote, selectedGroup }) => {
   const [noteText, setNoteText] = useState('');
@@ -55,7 +56,7 @@ const NoteInput = ({ addNote, selectedGroup }) => {
           cursor: noteText.trim() === '' ? 'not-allowed' : 'pointer',
         }}
       >
-        <img src="/src/assets/Vector__3_-removebg-preview.png" alt="Arrow" />
+        <img src={ButtonImage} alt="Arrow" />
       </button>
     </div>
   );

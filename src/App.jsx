@@ -4,6 +4,8 @@ import NoteList from './NoteList';
 import NoteInput from './NoteInput';
 import Modal from './Modal';
 import useLocalStorage from './hooks/useLocalStorage';
+import VectorImage from './assets/Vector (4).png';
+import HomeImage from './assets/image-removebg-preview 1.png';
 import './App.css';
 
 function App() {
@@ -56,11 +58,11 @@ function App() {
           </>
         ) : (
           <div className="placeholder">
-            <img src="\src\assets\image-removebg-preview 1.png" alt="Welcome Illustration" />
+            <img src={HomeImage} alt="Welcome Illustration" />
             <h1>Pocket Notes</h1>
             <p>Send and receive messages without keeping your phone online.</p>
             <p>Use Pocket Notes on up to 4 linked devices and 1 mobile phone</p>
-            <h4><img src="/src/assets/Vector (4).png" className="lockimage"alt="" />end-to-end encrypted</h4>
+            <h4><img src={VectorImage} className="lockimage"alt="" />end-to-end encrypted</h4>
           </div>
         )}
       </div>
